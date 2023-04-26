@@ -9,7 +9,7 @@
 
 ## Sha1 
 
-É interessante começarmos esse incrível algoritmo de hash criptográfico. Usado para garantir a integridade e autenticidade de dados digitais, como senhas, arquivos e mensagens, através de uma criação sobre "impressão digital".   A saída de encriptação deste algoritmo se torna único, pois ela gera um conjunto de characteres identificadores de quarenta dígitos. Independente do que seja alterado o sistema de segurança capta e gera um novo hash criptográfico. 
+É interessante começarmos com esse incrível algoritmo de hash criptográfico. Usado para garantir a integridade e autenticidade de dados digitais, como senhas, arquivos e mensagens, através de uma criação sobre "impressão digital".   A saída de encriptação deste algoritmo se torna único, pois ela gera um conjunto de characteres identificadores de quarenta dígitos. Independente do que seja alterado o sistema de segurança capta e gera um novo hash criptográfico. 
 
 Por fora do conteúdo pude analisar que devido a vulnerabilidades descobertas na sua estrutura de criptografia ele foi gradualmente sendo substituído por algoritmos de hash mais robustos, como o SHA-256 e SHA-3.
 
