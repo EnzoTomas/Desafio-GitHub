@@ -86,3 +86,69 @@ A criação de um repositório é essencial para o gerenciamento eficiente de pr
   Depois que um commit é criado, ele é adicionado ao histórico do repositório Git e pode ser visto usando o comando "git log". 
 
   *É importante lembrar que, embora o "git commit" salve as alterações no repositório, ele não as envia para um repositório remoto.*
+
+- ## Sistema Tracked ou Untracked 
+
+  A principal diferença entre um arquivo **untracked** e **tracked** é que os arquivos untracked não estão sendo monitorados pelo Git, enquanto os arquivos **tracked** são rastreados e o Git registra suas alterações.
+
+- **Untracked** 
+
+  Um arquivo **untracked** (não rastreado) em um repositório Git é um arquivo que existe no diretório de trabalho, mas ainda não foi adicionado ao Git.
+
+  > é importante ressaltar que quando há uma  nova criação de arquivo no seu diretório ele será considerado untracked pelo Git até que você o adicione ao repositório usando o comando $ git add nome_do_arquivo.
+  >
+  > > Ressaltando que o Git nao rastreia automaticamente todos os arquivos em seu diretório, fazendo assim uma abertura de janela para selecionar arquivos específicos que deseje fazer commit.
+
+- **Unmodified**
+
+  Falamos sobre um arquivo **Unmodified** quando o arquivo se encontra rastreado pelo Git, mas não sofreu nenhuma modificação dede o último commit. Significando que há um conteúdo idêntico ao conteúdo registrado no último commit.
+
+  
+
+- **Modified** 
+
+  Referimos um arquivo como **Modified** quando um arquivo rastreado pelo Git sofreu uma alteração desde o último commit registrado. Levando então a ideia de que o arquivo presente no seu diretório sofreu uma modificação em relação à versão registrada anteriormente. 
+
+  > Os arquivos podem ser identificados pelo Git durante a execução do comando $ git status. São listados como alterados, geralmente são destacados para indicar que houve uma alteração no arquivo.
+  >
+  > > Para incluir uma alteração em um arquivos é preciso o uso do comando $ git add posteriormente já tendo colocado o mesmo no arquivo de preparação. Tendo a finalização deste comando já podemos utilizar um $ git commit.
+
+- **Staged**
+
+Um arquivo **Staged** é um arquivo que foi selecionado para uma área de preparação do Git, usando o $ git add. Uma área que coloca as alterações que deseja incluir no git a seguir. 
+
+> Quando o comando for executado em um arquivo modificado, ele passará para o estado **staged** indicando que as alterações feitas naquele arquivo serão incluídas no próximo commit. 
+
+A área **staged** é uma etapa intermediária que nos possibilita a escolha de quais arquivos desejamos incluir em um commit específico. Podendo assim, adicionar vários arquivos à área de preparação, usando o $ git add. E em seguida criar um commit que tenha todas as alterações preparadas. 
+
+> Lembrando que ao executarmos o comando $ git status, os arquivos **staged** terão a sua lista separadamente dos arquivos modificados. Eles geralmente são destacados para indicar que estão prontos para serem confirmados.
+>
+> > Para confirmar as alterações dos arquivos **staged** em um novo commit, você pode usar o comando . Isso criará um novo ponto na história do seu repositório, contendo as alterações dos arquivos preparados.
+
+*Em resumo, os arquivos **staged** são aqueles que foram adicionados à área de preparação usando $ git add e estão prontos para serem incluídos no próximo commit.*
+
+## Resumo do Projeto 
+
+O projeto aborda vários conceitos e comandos relacionados ao Git, um sistema de controle de versão amplamente utilizado no desenvolvimento de software. Alguns dos tópicos abordados são:
+
+- Algoritmo SHA-1
+
+  > Um algoritmo de hash criptográfico usado para garantir a integridade e autenticidade dos dados digitais. 
+
+- Objetos do Git 
+
+  > Utiliza três tipos principais de objetos para armazenar informações: blobs, trees e commits
+
+- Chaves SSH
+
+  >São usadas para autenticação criptografada em conexões seguras de rede. 
+
+- Criação de um repositório 
+
+  > O processo de criação de um repositório Git envolve a execução de comandos como git init, que inicia um repositório em um diretório existente, git add, que adiciona arquivos ao índice do Git, e git commit, que salva as alterações em um novo commit no histórico do repositório.
+
+- Sistema Tracked e Untracked 
+
+  > Um arquivo untracked (não rastreado) e tracked (rastreado) em um repositório Git está relacionada ao estado e ao monitoramento do Git em relação a esses arquivos.
+
+  *Em resumo, o projeto abrange conceitos fundamentais do Git, como criação de repositório, adição de arquivos, criação de commits e diferenciação entre arquivos tracked e untracked. Esses conceitos são essenciais para o uso efetivo do Git no controle de versão de projetos de software.*
